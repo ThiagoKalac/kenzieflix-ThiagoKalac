@@ -48,6 +48,7 @@ section .user1,.user2,.user3,.user4{
 img{
     border-radius: 8px;
     transition: 0.5s;
+    border: 1px transparent solid;
 }
 
 p{
@@ -61,7 +62,7 @@ p{
 }
 
 img:hover{
-    border: 1px white solid;
+    border-color: white;
     border-radius: 8px;
     transition: 0.5s;
     filter:brightness(2)
