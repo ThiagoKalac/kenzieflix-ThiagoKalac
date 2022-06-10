@@ -23,6 +23,7 @@ main.container header .logo{
     margin: 10px auto;
 }
 
+
 main.container header .text h1{
     margin: 73px auto;
     color: white;
@@ -61,12 +62,29 @@ p{
     transition: 0.5s;
 }
 
-img:hover{
+.user1>img:hover{
     border-color: white;
     border-radius: 8px;
     transition: 0.5s;
     filter:brightness(2)
-
+}
+.user2>img:hover{
+    border-color: white;
+    border-radius: 8px;
+    transition: 0.5s;
+    filter:brightness(2)
+}
+.user3>img:hover{
+    border-color: white;
+    border-radius: 8px;
+    transition: 0.5s;
+    filter:brightness(2)
+}
+.user4>img:hover{
+    border-color: white;
+    border-radius: 8px;
+    transition: 0.5s;
+    filter:brightness(2)
 }
 .user1:hover p{
     color: white;
