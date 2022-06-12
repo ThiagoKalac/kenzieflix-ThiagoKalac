@@ -1,52 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Thiago Rodrigues da Silva">
-    <title>KenzieFlix</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/icon.png">
+    <title>KenzieFLix</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;500;600&display=swap" rel="stylesheet">
 
 <body>
     <main class="container">
-        <header>
-            <div class="logo">
-                <img src="./img/logo.png" alt="Logo KenzieFlix">
-            </div>
-            <div class="text">
-                <h1>Quem está assistindo?</h1>
-            </div>
-        </header>
-        <section>
-            <div class="user1">
-                <img src="./img/avatar1.png" alt="Avatar Menina Cabelo cor de rosa">
-                <p>Aline</p>
-            </div>
-            <div class="user2">
-                <img src="./img/avatar2.png" alt="Avatar Panda">
-                <p>Pedrinho</p>
-            </div>
-            <div class="user3">
-                <img src="./img/avatar3.png" alt="Avatar Robo">
-                <p>Júlia</p>
-            </div>
-            <div class="user4">
-                <img src="./img/newUser.png" alt="Adicionar Novo Usuario">
-                <p>Adicionar perfil</p>
-            </div>
-        </section>
-
-        <div class="button">
-            <button type="button">Gerenciar Perfis</button>
+        <div class="logo">
+            <img src="./img/logo.png" alt="KenzieFLix">
         </div>
-
+        <p>Quem está assistindo?</p>
+        <section class="users">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="./img/avatar1.png" alt="usuario 01">
+                        <figcaption>Aline</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./img/avatar2.png" alt="usuario 02">
+                        <figcaption>Pedrinho</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./img/avatar3.png" alt="usuario 03">
+                        <figcaption>Júlia</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                            <img src="./img/newUser.png" alt="novo usuario">
+                        <figcaption>Adicionar novo perfil</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        <section class="button">
+            <form>
+                <button type="submit">Gerenciar Perfis</button>
+            </form>
+        </section>
     </main>
 </body>
 

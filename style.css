@@ -1,132 +1,88 @@
-body {
+body{
     background-color: #121214;
-    display: flex;
-    justify-content: center;
-    
-}
-
-main.container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    max-width: 700px;
- }
-
-header{
-    display: flex;
-    flex-direction: column;
-    margin: 5% auto;
-} 
-
-main.container header .logo{
-    margin: 10px auto;
-}
-
-
-main.container header .text h1{
-    margin: 73px auto;
-    color: white;
-    font-size: 32px;
     font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 600;
-    text-align: center;
-    line-height: 42px;
 }
-
-main.container section{
+main.container{
+    width: 700px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;   
+    align-items: center;
 }
 
-section .user1,.user2,.user3,.user4{
-    width: 160px;
-    height: 160px;
-    margin: auto 12px;
-   
-}
-
-img{
-    border-radius: 8px;
-    transition: 0.5s;
-    border: 1px transparent solid;
+main.container .logo{
+    margin: 42px 0px 73px 0px;   
 }
 
 p{
-    text-align: center;
-    margin:15px auto;
-    color:#9C9C9C;
-    font-size: 14px;
+    font-size: 32px;
     font-weight: 600;
-    font-family: 'IBM Plex Sans', sans-serif;
-    transition: 0.5s;
-}
-
-.user1>img:hover{
-    border-color: white;
-    border-radius: 8px;
-    transition: 0.5s;
-    filter:brightness(2)
-}
-.user2>img:hover{
-    border-color: white;
-    border-radius: 8px;
-    transition: 0.5s;
-    filter:brightness(2)
-}
-.user3>img:hover{
-    border-color: white;
-    border-radius: 8px;
-    transition: 0.5s;
-    filter:brightness(2)
-}
-.user4>img:hover{
-    border-color: white;
-    border-radius: 8px;
-    transition: 0.5s;
-    filter:brightness(2)
-}
-.user1:hover p{
     color: white;
-}
-.user2:hover p{
-    color: white;
-}
-.user3:hover p{
-    color: white;
-}
-.user4:hover p{
-    color: white;
-}
-
-
-.button{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-button{
-    border: 1.5px solid #FFFFFF;
-    border-radius: 8px;
     text-align: center;
-    color: #FFFFFF;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    background-color: #121214;
-    width: 206px;
-    height: 50px;
-    margin-top: 20%;
-    transition: 0.6s;
+    margin-bottom: 61px;
 }
 
-button:hover{
-    transition: 0.6s;
-    color: black;
-    background-color: white;
-    filter:brightness(1)
+main.container section.users{
+    width: 100%;
     
 }
 
+main.container section.users ul{
+    display: flex;
+    justify-content: space-between;
+    color: #9C9C9C;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+main.container section.users ul li>figure{
+    display: flex;
+    width: 160px;
+    flex-direction: column;
+    gap: 16px;   
+    transition: 0.3s;
+    object-fit: cover;
+}
+
+main.container section.users ul li>figure:hover{
+    filter: brightness(200%);
+    filter: drop-shadow(white);    
+    transition: 0.3s;
+  
+}
+
+main.container section.users ul li figure>img{
+border: 2px solid transparent;
+border-radius: 8px;
+transition: 0.3s;
+}
+
+main.container section.users ul li figure>img:hover{
+    border: 2px solid white;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+main.container section.button{
+    display: flex;
+    flex-direction: column;
+    margin: 136px 0;
+}
+
+main.container section.button button{
+    border: 1.5px solid #FFFFFF;
+    border-radius: 8px;
+    width: 206px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #121214;
+    color: white;
+    transition: 0.3s;
+}
+
+main.container section.button button:hover{
+    background-color: white;
+    color: #121214;
+    transition: 0.3s;
+}

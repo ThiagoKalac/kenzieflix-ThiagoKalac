@@ -1,7 +1,9 @@
-html, body, p, div, section, figure,figcaption,header,img,button{
+html, body, header, p, button, section, div, main, figure, figcaption, ul, li, img{
     margin: 0;
     padding: 0;
-    list-style: none;
     box-sizing: border-box;
+    text-decoration: none;
+    border: none;
     outline: none;
+    list-style: none;
 }
